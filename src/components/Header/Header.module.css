@@ -1,0 +1,31 @@
+
+.header {
+    background-color: #272930;
+    grid-area: h;
+    border-radius: 8px;
+    position: fixed;
+    width: 80%;
+    -webkit-box-shadow: 7px 8px 20px -1px rgba(158, 153, 158, 1);
+    -moz-box-shadow: 7px 8px 20px -1px rgba(158, 153, 158, 1);
+    box-shadow: 7px 8px 20px -1px rgba(158, 153, 158, 1);
+}
+
+.header img {
+    display: block;
+    position: relative;
+    z-index: 33;
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+    animation: Roll 3s ease-in-out alternate infinite 4s;
+}
+
+@keyframes Roll {
+    from {
+        transform: rotateY(-30deg);
+    }
+
+    to {
+        transform: rotateY(30deg);
+    }
+}
